@@ -166,6 +166,7 @@ h1,h2,h3,h4,h5,h6{
 
 .content-header{
 	margin-bottom:50px;
+	overflow:hidden;
 }
 
 input.search{
@@ -178,6 +179,7 @@ input.search{
 	border:2px solid transparent;
 	transition:all .2s;
 	color:#abb1c0;
+	max-width: 100%;
 }
 
 .separator{
@@ -188,11 +190,13 @@ input.search{
 	margin-top:-3px;
 	vertical-align: middle;
 	opacity:.4;
+	display:none;
 }
 
 .search-bar{
 	display:inline-block;
 	position:relative;
+	max-width: 100%;
 }
 
 .search-bar img{
@@ -274,6 +278,18 @@ img{
 	max-width: 100%
 }
 
+@media(min-width: 600px){
+	.separator{
+		display:inline-block;
+	}
+}
+
+@media(max-width: 600px){
+	.content-header button{
+		width:100%;
+		margin-top:15px;
+	}
+}
 
 
 /** ------------------------- BOOKS **/
@@ -397,6 +413,10 @@ img{
 	padding:30px 10px;
 }
 
+.shopping-cart td:first-of-type{
+	padding-left:0;
+}
+
 .shopping-cart tr:first-of-type td{
 	padding-top:0;
 }
@@ -409,12 +429,11 @@ img{
 	margin-right:15px;
 }
 
-@media(min-width: 600px){
+@media(min-width: 900px){
 	.shopping-cart img{
 		display:inline-block;
 	}
 }
-
 
 /** -------------------- Detail View **/
 
