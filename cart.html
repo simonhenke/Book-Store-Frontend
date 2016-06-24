@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Shop</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<a href="index.html"><img src="assets/book.png" alt=""></a>
+		</div>
+		<ul>
+			<li>
+				<a href="categories.html"><img src="assets/cat.png" alt=""></a>
+				<div class="icon-description">
+					Categories
+				</div>
+			</li>
+			<li>
+				<a href="authors.html"><img src="assets/author.png" alt=""></a>
+				<div class="icon-description">
+					Authors
+				</div>
+			</li>
+			<li class="cart-element">
+				<a href="cart.html"><img src="assets/cart.png" alt=""></a>
+				<div class="icon-description">
+					Shopping Cart
+				</div>
+				<div class="cart-counter">5</div>
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="title-box">
+			<h1 class="title">Shopping Cart</h1>
+		</div>
+
+		<div class="content-area cart-view">
+			
+			<div class="content-header">
+				<span>total price: <span class="total-price">72&euro;</span></span>
+				<div class="separator"></div>
+				<button class="outlined clear">clear cart </button>
+				<button class="checkout">checkout</button>
+			</div>
+			
+			<table class="shopping-cart">
+				<tr>
+					<td><a href="detail.html"><img src="assets/mockup.png" width="75" alt=""></a></td>
+					<td><a href="detail.html">My Awesome Book</a></td>
+					<td>24&euro;</td>
+					<td>2x</td>
+					<td class="change-amount">
+					<button class="small outlined round">+</button>
+					<button class="small outlined round">-</button>
+					</td>
+					<td>
+						<button class="small outlined red">remove</button> 
+					</td>
+				</tr>
+
+				<tr>
+					<td><a href="detail.html"><img src="assets/mockup.png" width="75" alt=""></a></td>
+					<td><a href="detail.html">My Awesome Book</a></td>
+					<td>24&euro;</td>
+					<td>2x</td>
+					<td class="change-amount">
+					<button class="small outlined round">+</button>
+					<button class="small outlined round">-</button>
+					</td>
+					<td>
+						<button class="small outlined red">remove</button> 
+					</td>
+				</tr>
+
+				<tr>
+					<td><a href="detail.html"><img src="assets/mockup.png" width="75" alt=""></a></td>
+					<td><a href="detail.html">My Awesome Book</a></td>
+					<td>24&euro;</td>
+					<td>2x</td>
+					<td class="change-amount">
+					<button class="small outlined round">+</button>
+					<button class="small outlined round">-</button>
+					</td>
+					<td>
+						<button class="small outlined red">remove</button> 
+					</td>
+				</tr>
+			</table>
+			
+
+		</div>
+
+	</main>
+</body>
+</html>
